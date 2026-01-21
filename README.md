@@ -20,6 +20,10 @@ A “What’s in your fridge?” website that allows users to select ingredients
 
 - **Friendly UI**: Playful design with user-friendly interface
 
+## Screenshots 📲
+
+image.png
+
 ## Technologies Used 🛠️
 
 - **React 19** -
