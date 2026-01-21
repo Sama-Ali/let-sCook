@@ -22,7 +22,16 @@ A “What’s in your fridge?” website that allows users to select ingredients
 
 ## Screenshots 📲
 
-image.png
+<img width="1792" height="997" alt="image" src="https://github.com/user-attachments/assets/0c0c6958-d233-471f-83c9-d8ce11745a7f" />
+
+<img width="1792" height="997" alt="image" src="https://github.com/user-attachments/assets/fc43c2c5-e3b9-4a7a-ae71-56e2106b44fe" />
+
+<img width="1792" height="997" alt="image" src="https://github.com/user-attachments/assets/5998afd8-5fb6-4999-a663-74a9cfa4dc07" />
+
+<img width="1792" height="999" alt="image" src="https://github.com/user-attachments/assets/ed65fa4f-dcd9-43f4-9599-3f9f26586bf1" />
+
+
+
 
 ## Technologies Used 🛠️
 
