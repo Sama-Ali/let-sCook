@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Let's Cook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A “What’s in your fridge?” website that allows users to select ingredients and discover matching recipes🥘😋
 
-## Available Scripts
+## Features ✨
 
-In the project directory, you can run:
+- **Ingredient Selection**: Choose ingredients from 7 categories:
 
-### `npm start`
+  - 🥦 Vegetables
+  - 🍎 Fruits
+  - 🥩 Meat & Poultry
+  - 🐟 Seafood
+  - 🥛 Dairy
+  - 🍫 Sweets & Baking
+  - 🍴 Other
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Recipe Discovery**: Find up to 10 recipes based on your selected ingredients using the Spoonacular API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Recipe Details**: View detailed cooking instructions with step-by-step guides
 
-### `npm test`
+- **Friendly UI**: Playful design with user-friendly interface
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used 🛠️
 
-### `npm run build`
+- **React 19** -
+- **React Router DOM** -
+- **Material-UI (MUI)** -
+- **Spoonacular API** - Recipe data and cooking instructions
+- **localStorage** - Persistent state management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Only 3steps 📖
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Select Ingredients**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Find Recipes**:
 
-### `npm run eject`
+3. **View Recipe Details**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure 📁
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+lets-cook/
+├── public/
+├── src/
+│   ├── assets/
+│   │   └── letsCook.png          # Main app image
+│   ├── componemts/
+│   │   ├── AppContent.js         # Main ingredient selection & recipe fetching
+│   │   ├── RecipesGrid.js        # Recipe grid display component
+│   │   └── RecipeDetails.js      # Individual recipe details page
+│   ├── contexts/
+│   │   └── ingredientsContext.js # Ingredient data context provider
+│   ├── App.js                    # Main app component with routing
+│   ├── App.css                   # Application styles
+│   ├── index.js                  # App entry point
+│   └── index.css                 # Global styles
+├── package.json
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Acknowledgments 🙏
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Spoonacular](https://spoonacular.com/food-api) for
+  - Finding recipes by ingredients (`/recipes/findByIngredients`)
+  - Getting detailed recipe information (`/recipes/{id}/information`)
+- [Material-UI](https://mui.com) for the component library
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Cooking! 👨‍🍳👩‍🍳

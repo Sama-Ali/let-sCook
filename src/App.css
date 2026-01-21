@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  background-color: #fc96f0;
+  height: 100%;
+  width: 100vw;
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold";
 }
 
-.App-link {
-  color: #61dafb;
+.cook-image {
+  display: block;
+  margin: 0;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cook-title {
+  font-size: 7rem;
+  color: #1a1414;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  letter-spacing: 2px;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px);
   }
+}
+
+.fridge-title {
+  font-size: 2.5rem;
+  color: #1a1414;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+
+.autocomplete-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.ingredient-autocomplete {
+  min-width: 400px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.ingredient-input {
+  background-color: white;
+  border-radius: 12px;
+}
+
+.ingredient-input .MuiOutlinedInput-root {
+  border-radius: 12px;
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold";
+}
+
+.ingredient-input .MuiInputLabel-root {
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold";
+  font-size: 1.2rem;
+  color: rgb(77, 77, 77) !important;
+}
+
+.ingredient-input .MuiInputLabel-root.Mui-focused {
+  color: rgb(77, 77, 77) !important;
+}
+
+.checkbox-option {
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold";
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+
+.checkbox-option:hover {
+  background-color: #e8d5f0 !important;
+}
+.ingredient-chip {
+  background-color: #744a8e !important;
+  color: white !important;
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold" !important;
+  font-size: 0.9rem !important;
+  margin: 4px !important;
+  border-radius: 20px !important;
+  padding: 4px 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.ingredient-chip .MuiChip-deleteIcon {
+  color: white !important;
+}
+
+.ingredient-chip:hover {
+  background-color: #4b2c5e !important;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.cook-button {
+  background-color: white !important;
+  color: #4b2c5e !important;
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold" !important;
+  font-size: 1.2rem !important;
+  padding: 10px 20px !important;
+  border: 2px solid #4b2c5e !important;
+  border-radius: 20px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.cook-button:hover {
+  background-color: #4b2c5e !important;
+  color: white !important;
+  border: 2px solid #4b2c5e !important;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.ingredient-checkbox {
+  color: #744a8e !important;
+}
+
+.ingredient-checkbox.Mui-checked {
+  color: #744a8e !important;
+}
+
+.recipe-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #744a8e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  color: #1a1414;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.recipe-ingredients h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b2c5e;
+}
+
+.recipe-ingredients ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.recipe-ingredients li {
+  margin-bottom: 0.25rem;
+}
+
+.recipesFounded {
+  font-size: 2rem !important;
+  color: #1a1414 !important;
+  background-color: #fc96f0 !important;
+  font-family: "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold" !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.moreIcon {
+  color: white !important;
+}
+
+.moreIcon:hover {
+  color: #4b2c5e !important;
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }
