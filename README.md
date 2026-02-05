@@ -35,11 +35,11 @@ A “What’s in your fridge?” website that allows users to select ingredients
 
 ## Technologies Used 🛠️
 
-- **React 19** -
-- **React Router DOM** -
-- **Material-UI (MUI)** -
+- **React 19** 
+- **React Router DOM** 
+- **Material-UI (MUI)** 
 - **Spoonacular API** - Recipe data and cooking instructions
-- **localStorage** - Persistent state management
+- **LocalStorage** - Persistent state management
 
 ## Only 3steps 📖
 
